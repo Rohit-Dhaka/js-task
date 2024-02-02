@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./output.css">             
+</head>
+<body>
+    <!-- Tabs -->
+    <section class="bg-[#F6F6F6] min-h-screen border-b-[2px] border-solid border-white">
+        <div class="container min-h-screen flex  items-center justify-center">
+            <div class="flex items-center justify-center flex-col">
+                <h1 class="tabheadin text-[#808080] text-[36px] font-Inter">Tabs</h1>
+                <div class="tabbox bg-white  mt-[43px] max-w-[540px] rounded-[20px] px-[25px] pt-[29px] pb-[34px]">
+                    <div class="flex gap-[22px] allbtn border-b-[1px] border-solid border-[#E5E5E5]">
+                        <button onclick="clickhere('tab1')" class="tabbtn pb-3 text-[#808080]">Tab-1</button>
+                        <button onclick="clickhere('tab2')" class="tabbtn pb-3 text-[#808080]">Tab-2</button>
+                        <button onclick="clickhere('tab3')" class="tabbtn pb-3 text-[#808080]">Tab-3</button>
+                    </div>
+                    <div class="pt-[22px]">
+                        <div id="tab1" class="tabcontant text-[#808080] leading-[150%]">
+                            <p>Tab-1, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt magnis dis odio at. Viverra a, id amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor maecenas scelerisque eu orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus. Orci, egestas porta nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                            <p>Massa, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt magnis dis odio at. Viverra a, id amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor maecenas scelerisque eu orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus. Orci, egestas porta nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                        </div>
+                        <div id="tab2" class="tabcontant text-[#808080] leading-[150%]">
+                            <p>Tab-2, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt magnis dis odio at. Viverra a, id amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor maecenas scelerisque eu orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus. Orci, egestas porta nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                            <p>Massa, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt magnis dis odio at. Viverra a, id amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor maecenas scelerisque eu orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus. Orci, egestas porta nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                        </div>
+                        <div id="tab3" class="tabcontant text-[#808080] leading-[150%]">
+                            <p>Tab-3, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt magnis dis odio at. Viverra a, id amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor maecenas scelerisque eu orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus. Orci, egestas porta nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                            <p>Massa, at est sit laoreet. Pellentesque sed habitasse nulla leo arcu quam. Tincidunt magnis dis odio at. Viverra a, id amet massa metus eros. Sed donec scelerisque id neque, mauris id ultricies auctor dui. Auctor maecenas scelerisque eu orci viverra volutpat. In dui justo, metus dolor. Mauris nibh at diam ipsum sollicitudin lacus. Orci, egestas porta nulla sed. Arcu mauris id bibendum habitant hendrerit semper vel.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- sidebar -->
+    <section class="bg-[#F6F6F6] min-h-screen flex justify-center items-center border-b-[2px] border-solid border-white">
+        <div class="linerbox bg-black absolute opacity-[0.5] min-h-screen w-[100%] z-40 left-[-100%]">
+        </div>
+        <div class="sidebar min-h-screen   bg-white  max-w-[286px] w-full pt-[21px] pr-[27px] pb-0 pl-[29px] rounded-r-[16px] absolute left-[-100%] z-50 duration-300 ease-in-out ">
+            <div class="flex justify-end">
+                <button class="bg-transparent border-0 closebtn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                        <path d="M17.6569 16.2426L13.4142 12L17.6569 7.75732L16.2426 6.3431L12 10.5857L7.75736 6.3431L6.34315 7.75732L10.5858 12L6.34315 16.2426L7.75736 17.6568L12 13.4142L16.2426 17.6568L17.6569 16.2426Z" fill="#808080" />
+                    </svg>
+                </button>
+            </div>
+            <div class="pt-[33px]">
+                <h3 class="m-0 font-semibold fs-sm ">Sidebar</h3>
+            </div>
+            <div class="mt-[25px] flex gap-1 flex-col">
+                <button class="btn-1 border-[1px] border-solid border-[#128DFF] texto[#128DFF] duration-300 ease-linear py-[13px] px-[35px] hover:text-white hover:bg-[#128DFF]">Link 1</button>
+                <button class="btn-1 border-[1px] border-solid border-[#128DFF] texto[#128DFF] duration-300 ease-linear py-[13px] px-[35px] hover:text-white hover:bg-[#128DFF]">Link 2</button>
+                <button class="btn-1 border-[1px] border-solid border-[#128DFF] texto[#128DFF] duration-300 ease-linear py-[13px] px-[35px] hover:text-white hover:bg-[#128DFF]">Link 3</button>
+                <button class="btn-1 border-[1px] border-solid border-[#128DFF] texto[#128DFF] duration-300 ease-linear py-[13px] px-[35px] hover:text-white hover:bg-[#128DFF]">Link 4</button>
+                <button class="btn-1 border-[1px] border-solid border-[#128DFF] texto[#128DFF] duration-300 ease-linear py-[13px] px-[35px] hover:text-white hover:bg-[#128DFF]">Link 5</button>
+            </div>
+        </div>
+        <div class="container ">
+            <div class="flex flex-col items-center">
+                <h2 class="text-[36px] text-[#808080]">Sidebar</h2>
+                <button class="btn  btn-2  rounded-[5px] mt-[31px] openbtn border-0 bg-[#128DFF] py-[13px] px-[35px] text-white duration-300 ease-linear">Open Sidear</button>
+            </div>
+        </div>
+    </section>
+    <!-- counter app -->
+    <section class="min-h-screen flex justify-center items-center flex-col bg-[#F6F6F6] border-b-[2px] border-solid border-white">
+        <div class="container">
+            <h3 class="text-center text-[#808080] text-[36px] font-normal ">Advanced Counter App</h3>
+        </div>
+        <div class=" flex justify-center items-center mt-[43px]">
+            <div class="box mx-auto max-w-[460px] w-full rounded-[20px] bg-white px-[88px] pt-[57px] pb-[34px]">
+                <p class="counting text-center mb-0 text-[36px] pb-[36px] text-black">0</p>
+                <div class="flex justify-center gap-2 mb-[36px]">
+                    <button class="addbtn  text-[#128DFF] text-center font-semibold border-[1px] border-solid border-[#128DFF] py-[13px] px-[35px] rounded-[4px] hover:text-white hover:bg-[#128DFF]">Add One</button>
+                    <button class="save btn-disable   text-center font-semibold savebtn border-0 text-white py-[13px] px-[45px] rounded-[4px] bg-[#128DFF] cursor-pointer duration-300 ease-linear">Save</button>
+                </div>
+                <p class="text-[#808080] text-center">Previous Values</p>
+                <p class="storecounting fs-sm  text-black text-center mb-0 ">0</p>
+                <div class="flex justify-center"><button class="resetbtn reset  text-center  mt-[21px] text-[#128DFF]  bg-white  py-[11px] px-[28px] rounded-[5px] border-[1px] border-solid border-[#128DFF]  hover:text-white hover:bg-[#128DFF] duration-300 ease-linear">RESET</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Task App -->
+    <section class="bg-[#F6F6F6] min-h-screen flex items-center justify-center border-b-[2px] border-solid border-white">
+        <div class="container flex justify-center ">
+            <div class="max-w-[540px] w-full ">
+                <h2 class="text-[#808080] text-[36px] font-normal  text-center">Task App</h2>
+                <div class="box  bg-white rounded-[20px] shadow-box-shadow px-[21px] pt-[23px] pb-[28px] mt-[43px]">
+                    <div class="input-box  border-[1px]  border-solid border-[#E5E5E5] rounded-[5px] py-[7px] pr-[8px] pl-[19px] flex gap-[4px]">
+                        <input id="input" type="text" class="w-full outline-none text-[#808080]" placeholder="Add your task here...">
+                        <button id="addtask" class="text-[16px] font-medium text-white bg-gradient-to-r from-[#128DFF] to-[#1444EF] py-[13px] px-[34px] text-nowrap rounded-[4px]">Add Task</button>
+                    </div>
+                    <h3 class="pt-[23px] text-black  opacity-[0.5]">Today’s tasks</h3>
+                    <ul id="taskcontainer" class="pt-[9px] flex gap-[4px] flex-col">
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Accordian -->
+    <section class="min-h-screen flex justify-center items-center bg-[#F6F6F6] border-b-[2px] border-solid border-white">
+        <div class="container flex flex-col items-center">
+            <h2 class="text-[#808080] text-[36px]">Accordian</h2>
+            <div class="box mt-[43px] flex gap-[10px] flex-col bg-white max-w-[540px] w-full py-[24px] px-[21px] rounded-[20px]">
+                <div class="acc-item ">
+                    <div class="acched flex justify-between">
+                        <h3 class="text-[#808080]">Group-1</h3>
+                        <div class="down-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M16.293 9.29297L12 13.586L7.70697 9.29297L6.29297 10.707L12 16.414L17.707 10.707L16.293 9.29297Z"
+                                    fill="#808080" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accpar pt-[18px]">
+                        <p class="text-[#808080] leading-[150%]">Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.</p>
+                    </div>
+                </div>
+                <div class="acc-item active">
+                    <div class="acched flex justify-between">
+                        <h3 class="text-[#808080]">Group-1</h3>
+                        <div class="down-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M16.293 9.29297L12 13.586L7.70697 9.29297L6.29297 10.707L12 16.414L17.707 10.707L16.293 9.29297Z"
+                                    fill="#808080" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accpar pt-[18px]">
+                        <p class="text-[#808080] leading-[150%]">Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
+                        </p>
+                    </div>
+                </div>
+                <div class="acc-item ">
+                    <div class="acched flex justify-between">
+                        <h3 class="text-[#808080]">Group-1</h3>
+                        <div class="down-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M16.293 9.29297L12 13.586L7.70697 9.29297L6.29297 10.707L12 16.414L17.707 10.707L16.293 9.29297Z"
+                                    fill="#808080" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accpar pt-[18px]">
+                        <p class="text-[#808080] leading-[150%]">Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
+                        </p>
+                    </div>
+                </div>
+                <div class="acc-item ">
+                    <div class="acched flex justify-between">
+                        <h3 class="text-[#808080]">Group-1</h3>
+                        <div class="down-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M16.293 9.29297L12 13.586L7.70697 9.29297L6.29297 10.707L12 16.414L17.707 10.707L16.293 9.29297Z"
+                                    fill="#808080" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accpar pt-[18px]">
+                        <p class="text-[#808080] leading-[150%]">Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
+                        </p>
+                    </div>
+                </div>
+                <div class="acc-item ">
+                    <div class="acched flex justify-between">
+                        <h3 class="text-[#808080]">Group-1</h3>
+                        <div class="down-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none">
+                                <path d="M16.293 9.29297L12 13.586L7.70697 9.29297L6.29297 10.707L12 16.414L17.707 10.707L16.293 9.29297Z"
+                                fill="#808080" />
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="accpar pt-[18px]">
+                        <p class="text-[#808080] leading-[150%]">Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc. Nibh dictum nulla morbi ornare. Varius sit at eget nunc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Task App -->
+    <script>
+        const input = document.getElementById("input");
+        const addtask = document.getElementById("addtask");
+        const taskcontainer = document.getElementById("taskcontainer");
+        addtask.addEventListener("click", () => {
+            const firsttask = document.createElement("li");
+            firsttask.className = "styleclass"
+            if (input.value == "") {
+                firsttask.style.display = "none"
+            }
+            firsttask.innerHTML = `
+                <span>${input.value}</span> 
+                <svg onclick="cross(event)"   width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5" class="hover:opacity-100">
+                <path d="M12 2C6.486 2 2 6.486 2 12C2 17.514 6.486 22 12 22C17.514 22 22 17.514 22 12C22 6.486 17.514 2 12 2ZM12 20C7.589 20 4 16.411 4 12C4 7.589 7.589 4 12 4C16.411 4 20 7.589 20 12C20 16.411 16.411 20 12 20Z" fill="black"/>
+                <path d="M9.99909 13.587L7.70009 11.292L6.28809 12.708L10.0011 16.413L16.7071 9.70697L15.2931 8.29297L9.99909 13.587Z" fill="black"/>
+                </g>
+                </svg>
+                <svg  onclick="removechild(event)" class="cursor-pointer" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g opacity="0.5" class="hover:opacity-100">
+                <path d="M5 20C5 20.5304 5.21071 21.0391 5.58579 21.4142C5.96086 21.7893 6.46957 22 7 22H17C17.5304 22 18.0391 21.7893 18.4142 21.4142C18.7893 21.0391 19 20.5304 19 20V8H21V6H17V4C17 3.46957 16.7893 2.96086 16.4142 2.58579C16.0391 2.21071 15.5304 2 15 2H9C8.46957 2 7.96086 2.21071 7.58579 2.58579C7.21071 2.96086 7 3.46957 7 4V6H3V8H5V20ZM9 4H15V6H9V4ZM8 8H17V20H7V8H8Z" fill="black"/>
+                <path d="M9 10H11V18H9V10ZM13 10H15V18H13V10Z" fill="black"/>
+                </g>
+                </svg>
+                `
+            taskcontainer.appendChild(firsttask)
+            input.value = ""
+        });
+        function cross() {
+            const change = event.target.parentElement.querySelector('span')
+            change.classList.toggle("line")
+            saveDate();
+        }
+        function removechild() {
+            const firsttask = event.target.parentElement
+            taskcontainer.removeChild(firsttask)
+        }
+    </script>
+    <!-- counter app -->
+    <script>
+        const counting = document.querySelector(".counting");
+        const addbtn = document.querySelector(".addbtn");
+        const savebtn = document.querySelector(".savebtn");
+        const storecounting = document.querySelector(".storecounting");
+        const resetbtn = document.querySelector(".resetbtn");
+        addbtn.addEventListener("click", function () {
+            counting.innerHTML = +counting.innerHTML + 1
+            savebtn.classList.remove("btn-disable")
+        })
+        savebtn.addEventListener("click", function () {
+            if (counting.innerHTML == 0) {
+                savebtn.classList.add("btn-disable")
+            }
+            else {
+                if (storecounting.innerHTML == 0) {
+                    storecounting.innerHTML = counting.innerHTML
+                }
+                else {
+                    storecounting.innerHTML = storecounting.innerHTML + " , " + counting.innerHTML
+                }
+                counting.innerHTML = 0
+            }
+        })
+        resetbtn.addEventListener("click", function () {
+            counting.innerHTML = 0
+            storecounting.innerHTML = 0
+        })
+    </script>
+    <!-- sidebar -->
+    <script>
+        const sidebar = document.querySelector(".sidebar");
+        const openbtn = document.querySelector(".openbtn");
+        const closebtn = document.querySelector(".closebtn");
+        const linerbox = document.querySelector(".linerbox");
+        linerbox.addEventListener("click", linerhide);
+        openbtn.addEventListener("click", show);
+        function show() {
+            sidebar.classList.toggle("active");
+            openbtn.classList.toggle("active");
+            document.body.classList.toggle("overflow-hidden")
+        }
+        closebtn.addEventListener("click", hide);
+        function hide() {
+            sidebar.classList.toggle("active");
+            linerbox.classList.toggle("active");            
+        }
+        openbtn.addEventListener("click", linershow);
+        function linershow() {
+            linerbox.classList.toggle("active");
+        }
+        function linerhide() {
+            sidebar.classList.toggle("active");
+            linerbox.classList.toggle("active");
+            document.body.classList.toggle("overflow-hidden")
+        }
+    </script>
+    <!-- Tabs -->
+    <script>
+        const tabcontant = document.querySelectorAll(".tabcontant");
+        const firstcontant = document.querySelector(".tabcontant");
+        const fistactivetab = document.querySelector(".allbtn button");
+        tabcontant.forEach(e => e.style.display = "none");
+        firstcontant.style.display = "block";
+        fistactivetab.classList.add("active");
+        function clickhere(tabs) {
+            tabcontant.forEach(e => e.style.display = "none");
+            const selectcontant = document.getElementById(tabs)
+            selectcontant.style.display = "block";
+            const tabsactive = document.querySelectorAll(".allbtn button")
+            tabsactive.forEach(e => e.classList.remove("active"))
+            const selecttab = document.querySelector(`button[onclick="clickhere('${tabs}')"]`)
+            selecttab.classList.add("active")
+        }
+    </script>
+    <!-- Accordian -->
+    <script>
+        const accordion = document.querySelectorAll(".acc-item");
+        accordion.forEach(function (e) {
+            e.addEventListener("click", function () {
+                e.classList.toggle("active");
+                var isactive = document.querySelector(".accordion");
+                accordion.forEach(function (e) {
+                    e.classList.remove("active");
+                })
+                if (!isactive) {
+                    e.classList.toggle("active");
+                }
+            })
+        })
+    </script>
+</body>
+</html>
